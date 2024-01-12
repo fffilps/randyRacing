@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import TimeBox from "./timeBox"
+import TimeBox from "./TimeBox"
 
 const Hero = () => {
   //we are going to create a countdown for one week.
