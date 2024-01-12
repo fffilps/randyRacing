@@ -5,6 +5,7 @@ const Hero = () => {
   //we are going to create a countdown for one week.
 
   // Next is doing a clean up. by getting rid of all of the function calls and making it all sets only in one function.
+  // also fix the days. 17-17 = 0 - 1 = -1. contain that condition.
 
 
 
@@ -27,7 +28,7 @@ const Hero = () => {
       if(hoursCalc<0) {
         return setHoursLeft(24 + hoursCalc)
       } else {
-        return hoursLeft
+        return setHoursLeft(hoursCalc)
       }
     }
 
@@ -38,7 +39,7 @@ const Hero = () => {
       if(minutesCalc<0) {
         return setMinutesLeft(60 + minutesCalc)
       } else {
-        return minutesLeft
+        return setMinutesLeft(minutesCalc)
       }
     }
 
